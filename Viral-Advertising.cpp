@@ -19,7 +19,7 @@ int viralAdvertising(int n)
     
     for (int i = 0; i < n; ++i)
     {
-        shared = (int)floor(shared/2);
+        shared = static_cast<int>(floor(shared/2));
         cumulative += shared;
         shared *= 3;
     }
